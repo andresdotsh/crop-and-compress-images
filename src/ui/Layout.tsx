@@ -26,7 +26,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className='flex md:order-2'>
             <Button
               size={'sm'}
-              className='mr-4 md:mr-0'
               as='a'
               href='https://github.com/rwx222/ccimg'
               target='_blanks'
@@ -34,26 +33,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <GitHubIcon className='xs:mr-1' width='20' height='20' />
               <span className='hidden xs:inline text-base leading-5 font-normal'>{`GitHub`}</span>
             </Button>
-            <Navbar.Toggle />
           </div>
-
-          <Navbar.Collapse>
-            <Navbar.Link
-              href='https://buymeacoffee.com/rwx222'
-              target='_blank'
-              className='text-xl leading-5 md:text-base md:leading-5'
-            >
-              {`Buy me a ☕️`}
-            </Navbar.Link>
-
-            <Navbar.Link
-              href='https://x.com/rwx211'
-              target='_blank'
-              className='text-xl leading-5 md:text-base md:leading-5'
-            >
-              {`With ❤️ by`}
-            </Navbar.Link>
-          </Navbar.Collapse>
         </Navbar>
       </div>
 
