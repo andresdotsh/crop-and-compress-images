@@ -1,7 +1,8 @@
 import 'react-easy-crop/react-easy-crop.css'
 import { useState, useCallback, useRef, useMemo } from 'react'
 import toast from 'react-hot-toast'
-import Cropper, { Area } from 'react-easy-crop'
+import Cropper from 'react-easy-crop'
+import type { Area } from 'react-easy-crop'
 import ImageCompressor from 'js-image-compressor'
 import { DarkThemeToggle, Button } from 'flowbite-react'
 
@@ -419,7 +420,7 @@ const App = () => {
           {tempImageUrlToCrop && (
             <div className='absolute top-0 bottom-0 left-0 right-0 cu-bg-standard'>
               <div className='pb-10'>
-                <div className='relative h-[calc(100dvh-4rem)] max-h-[800px]'>
+                <div className='relative h-[calc(100dvh-4rem)] max-h-200'>
                   <div className='absolute left-0 right-0 top-0 bottom-20'>
                     <Cropper
                       aspect={selectedAspectValue}
